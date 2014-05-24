@@ -1,0 +1,24 @@
+<?page title="Auto Generated index.zul"?>
+<window title="Hello World!!" border="normal" width="100%"
+	height="100%" apply="juego.juego">
+
+
+	<label value="You are using: ${desktop.webApp.version}" />
+
+	<borderlayout>
+		<north>
+
+		</north>
+		<center>
+			<div>
+				<label value="Ingrese Numero" />
+				<textbox id="txtNumero" />
+				<label id="lblResultado" />
+				<checkbox label="pares:" id="chkpares"/>
+			</div>
+		</center>
+		<south>
+			<button label="jugar222" id="btn_jugar"></button>
+		</south>
+	</borderlayout>
+</window>

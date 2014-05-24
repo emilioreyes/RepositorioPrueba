@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://juego" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://juego" xmlns:intf="http://juego" xmlns:tns1="http://ui.zk.zkoss.org" xmlns:tns2="http://lang.java" xmlns:tns3="http://metainfo.ui.zk.zkoss.org" xmlns:tns4="http://event.ui.zk.zkoss.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://juego" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://metainfo.ui.zk.zkoss.org"/>
+   <import namespace="http://ui.zk.zkoss.org"/>
+   <import namespace="http://lang.java"/>
+   <import namespace="http://event.ui.zk.zkoss.org"/>
+   <element name="onClick$btn_jugar">
+    <complexType/>
+   </element>
+   <element name="onClick$btn_jugarResponse">
+    <complexType/>
+   </element>
+   <element name="doAfterCompose">
+    <complexType>
+     <sequence>
+      <element name="comp" type="xsd:anyType"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="doAfterComposeResponse">
+    <complexType/>
+   </element>
+   <element name="willClone">
+    <complexType>
+     <sequence>
+      <element name="comp" type="tns1:Component"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="willCloneResponse">
+    <complexType>
+     <sequence>
+      <element name="willCloneReturn" type="xsd:anyType"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="didActivate">
+    <complexType>
+     <sequence>
+      <element name="comp" type="tns1:Component"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="didActivateResponse">
+    <complexType/>
+   </element>
+   <element name="willPassivate">
+    <complexType>
+     <sequence>
+      <element name="comp" type="tns1:Component"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="willPassivateResponse">
+    <complexType/>
+   </element>
+   <element name="doCatch">
+    <complexType>
+     <sequence>
+      <element name="ex" type="xsd:anyType"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="doCatchResponse">
+    <complexType>
+     <sequence>
+      <element name="doCatchReturn" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="doFinally">
+    <complexType/>
+   </element>
+   <element name="doFinallyResponse">
+    <complexType/>
+   </element>
+   <element name="doBeforeCompose">
+    <complexType>
+     <sequence>
+      <element name="page" type="xsd:anyType"/>
+      <element name="parent" type="tns1:Component"/>
+      <element name="compInfo" type="xsd:anyType"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="doBeforeComposeResponse">
+    <complexType>
+     <sequence>
+      <element name="doBeforeComposeReturn" type="tns3:ComponentInfo"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="doBeforeComposeChildren">
+    <complexType>
+     <sequence>
+      <element name="comp" type="tns1:Component"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="doBeforeComposeChildrenResponse">
+    <complexType/>
+   </element>
+   <element name="bindComponent">
+    <complexType>
+     <sequence>
+      <element name="comp" type="tns1:Component"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="bindComponentResponse">
+    <complexType/>
+   </element>
+   <element name="onEvent">
+    <complexType>
+     <sequence>
+      <element name="evt" type="xsd:anyType"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="onEventResponse">
+    <complexType/>
+   </element>
+   <element name="unbindComponent">
+    <complexType>
+     <sequence>
+      <element name="comp" type="tns1:Component"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="unbindComponentResponse">
+    <complexType/>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="bindComponentRequest">
+
+      <wsdl:part element="impl:bindComponent" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="onClick$btn_jugarRequest">
+
+      <wsdl:part element="impl:onClick$btn_jugar" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="unbindComponentRequest">
+
+      <wsdl:part element="impl:unbindComponent" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="doAfterComposeResponse">
+
+      <wsdl:part element="impl:doAfterComposeResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="doBeforeComposeResponse">
+
+      <wsdl:part element="impl:doBeforeComposeResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="bindComponentResponse">
+
+      <wsdl:part element="impl:bindComponentResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="willCloneResponse">
+
+      <wsdl:part element="impl:willCloneResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="onClick$btn_jugarResponse">
+
+      <wsdl:part element="impl:onClick$btn_jugarResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="doCatchResponse">
+
+      <wsdl:part element="impl:doCatchResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="doBeforeComposeRequest">
+
+      <wsdl:part element="impl:doBeforeCompose" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="doCatchRequest">
+
+      <wsdl:part element="impl:doCatch" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="willPassivateRequest">
+
+      <wsdl:part element="impl:willPassivate" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="unbindComponentResponse">
+
+      <wsdl:part element="impl:unbindComponentResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="doBeforeComposeChildrenResponse">
+
+      <wsdl:part element="impl:doBeforeComposeChildrenResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="doAfterComposeRequest">
+
+      <wsdl:part element="impl:doAfterCompose" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="doBeforeComposeChildrenRequest">
+
+      <wsdl:part element="impl:doBeforeComposeChildren" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="doFinallyRequest">
+
+      <wsdl:part element="impl:doFinally" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="didActivateResponse">
+
+      <wsdl:part element="impl:didActivateResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="didActivateRequest">
+
+      <wsdl:part element="impl:didActivate" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="onEventRequest">
+
+      <wsdl:part element="impl:onEvent" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="doFinallyResponse">
+
+      <wsdl:part element="impl:doFinallyResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="onEventResponse">
+
+      <wsdl:part element="impl:onEventResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="willPassivateResponse">
+
+      <wsdl:part element="impl:willPassivateResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="willCloneRequest">
+
+      <wsdl:part element="impl:willClone" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="juego">
+
+      <wsdl:operation name="onClick$btn_jugar">
+
+         <wsdl:input message="impl:onClick$btn_jugarRequest" name="onClick$btn_jugarRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:onClick$btn_jugarResponse" name="onClick$btn_jugarResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="doAfterCompose">
+
+         <wsdl:input message="impl:doAfterComposeRequest" name="doAfterComposeRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:doAfterComposeResponse" name="doAfterComposeResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="willClone">
+
+         <wsdl:input message="impl:willCloneRequest" name="willCloneRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:willCloneResponse" name="willCloneResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="didActivate">
+
+         <wsdl:input message="impl:didActivateRequest" name="didActivateRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:didActivateResponse" name="didActivateResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="willPassivate">
+
+         <wsdl:input message="impl:willPassivateRequest" name="willPassivateRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:willPassivateResponse" name="willPassivateResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="doCatch">
+
+         <wsdl:input message="impl:doCatchRequest" name="doCatchRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:doCatchResponse" name="doCatchResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="doFinally">
+
+         <wsdl:input message="impl:doFinallyRequest" name="doFinallyRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:doFinallyResponse" name="doFinallyResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="doBeforeCompose">
+
+         <wsdl:input message="impl:doBeforeComposeRequest" name="doBeforeComposeRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:doBeforeComposeResponse" name="doBeforeComposeResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="doBeforeComposeChildren">
+
+         <wsdl:input message="impl:doBeforeComposeChildrenRequest" name="doBeforeComposeChildrenRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:doBeforeComposeChildrenResponse" name="doBeforeComposeChildrenResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="bindComponent">
+
+         <wsdl:input message="impl:bindComponentRequest" name="bindComponentRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:bindComponentResponse" name="bindComponentResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="onEvent">
+
+         <wsdl:input message="impl:onEventRequest" name="onEventRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:onEventResponse" name="onEventResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="unbindComponent">
+
+         <wsdl:input message="impl:unbindComponentRequest" name="unbindComponentRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:unbindComponentResponse" name="unbindComponentResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="juegoSoapBinding" type="impl:juego">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="onClick$btn_jugar">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="onClick$btn_jugarRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="onClick$btn_jugarResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="doAfterCompose">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="doAfterComposeRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="doAfterComposeResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="willClone">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="willCloneRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="willCloneResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="didActivate">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="didActivateRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="didActivateResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="willPassivate">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="willPassivateRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="willPassivateResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="doCatch">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="doCatchRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="doCatchResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="doFinally">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="doFinallyRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="doFinallyResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="doBeforeCompose">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="doBeforeComposeRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="doBeforeComposeResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="doBeforeComposeChildren">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="doBeforeComposeChildrenRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="doBeforeComposeChildrenResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="bindComponent">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="bindComponentRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="bindComponentResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="onEvent">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="onEventRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="onEventResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="unbindComponent">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="unbindComponentRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="unbindComponentResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="juegoService">
+
+      <wsdl:port binding="impl:juegoSoapBinding" name="juego">
+
+         <wsdlsoap:address location="http://localhost:8080/paresNones/services/juego"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
