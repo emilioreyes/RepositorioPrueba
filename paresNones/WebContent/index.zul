@@ -3,7 +3,7 @@
 	height="100%" apply="juego.juego">
 
 
-	<label value="You are using: ${desktop.webApp.version}" />
+	<label value="Yo uso ${desktop.webApp.version}" />
 
 	<borderlayout>
 		<north>
