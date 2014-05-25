@@ -18,7 +18,7 @@
 			</div>
 		</center>
 		<south>
-			<button label="jugarAlos pares  o nones MODIFICADO DESDE OTRO USUARIO HACIA EL MISMO REPOSITORIO" id="btn_jugar"></button>
+			<button label="jugarAlos xxxxxxx pares  o nones MODIFICADO DESDE OTRO USUARIO HACIA EL MISMO REPOSITORIO" id="btn_jugar"></button>
 		</south>
 	</borderlayout>
 </window>
