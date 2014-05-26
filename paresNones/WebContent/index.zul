@@ -11,7 +11,7 @@
 		</north>
 		<center>
 			<div>
-				<label value="Ingrese Numero" />
+				<label value="Ingrese Numero <esto>" />
 				<textbox id="txtNumero" />
 				<label id="lblResultado" />
 				<checkbox label="pares:" id="chkpares"/>
