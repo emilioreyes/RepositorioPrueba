@@ -3,7 +3,7 @@
 	height="100%" apply="juego.juego">
 
 
-	<label value="Yo uso ${desktop.webApp.version}" />
+	<label value="Yo estoy en robot arena${desktop.webApp.version}" />
 
 	<borderlayout>
 		<north>
